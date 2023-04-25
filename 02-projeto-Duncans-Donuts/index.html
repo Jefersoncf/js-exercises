@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duncan's Just-In-Time Donuts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Duncan's Just-In-Time Donuts</h1>
+      <p>todos os donuts 50 centavos cada, bolo ou vidro</p>
+    </header>
+
+    <div class="container">
+      <div class="left">
+        <img src="rosquinha.jpg" alt="" />
+      </div>
+      <div class="right">
+        <form action="">
+          <div class="input-content">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Nome" />
+          </div>
+
+          <div class="input-content">
+            <label for="cake">Quantidade de Rosquinhas Donuts:</label>
+            <input
+              type="text"
+              name="cake"
+              id="cake"
+              placeholder="Ex: 4"
+              onchange="updateOrder()"
+            />
+          </div>
+
+          <div class="input-content">
+            <label for="glazed">Quantidade de Rosquinhas Cristalizadas:</label>
+            <input
+              type="text"
+              name="glazed"
+              id="glazed"
+              placeholder="Ex: 4"
+              onchange="updateOrder()"
+            />
+          </div>
+
+          <div class="input-content">
+            <label for="time-pickup">Tempo estimado de entrega:</label>
+            <input
+              type="text"
+              name="time-pickup"
+              id="time-pickup"
+              placeholder="Ex: 40min"
+            />
+          </div>
+
+          <div class="input-content">
+            <label for="subtotal">SubTotal:</label>
+            <input
+              type="text"
+              name="subtotal"
+              id="subtotal"
+              placeholder="Ex: R$ 50"
+            />
+          </div>
+
+          <div class="input-content">
+            <label for="tax">Taxa:</label>
+            <input type="text" name="tax" id="tax" placeholder="Ex: R$ 10" />
+          </div>
+
+          <div class="input-content">
+            <label for="total">Total:</label>
+            <input
+              type="text"
+              name="total"
+              id="total"
+              placeholder="Ex: R$ 100"
+            />
+          </div>
+          <div class="input-content">
+            <button onclick="placeOrder(this.form) ">Fazer pedido</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

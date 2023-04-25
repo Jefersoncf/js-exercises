@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iRock Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="alert(`Oi, eu sou seu amigo virtual!`)">
+    <header class="header">
+      <h1>SEJA BEM VINDO AO iROCK PAGE.</h1>
+    </header>
+
+    <div class="irock">
+      <img id="img" src="irock.jpg" alt="irock" onclick="touchImage()" />
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close" id="close">&times;</span>
+        <h2>Seja Bem-vindo(a)!</h2>
+        <p>Olá querido amigo, Seja bem vindo.</p>
+        <p>Diga-me o que você está pensando?</p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
