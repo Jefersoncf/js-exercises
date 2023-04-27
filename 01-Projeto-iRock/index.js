@@ -1,3 +1,7 @@
+function getUser() {
+  alert("Bem vindo ao iRock!");
+}
+
 function toggleModal() {
   var modal = document.getElementById("modal");
   if (modal.style.display === "none") {
@@ -7,20 +11,16 @@ function toggleModal() {
   }
 }
 
+let windowClient = document.body.clientHeight;
+console.log(windowClient);
+function resizeRock() {
+  document.getElementById("img").style.height = windowClient;
+  (document.body.clientHeight - 100) * 0.9;
+}
+
 window.addEventListener("load", toggleModal);
 
 document.getElementById("close").addEventListener("click", toggleModal);
-
-// window.alert("Olá, seja bem vindo(a) ao iRock!");
-
-// let nome = prompt("Qual o seu nome?");
-// alert("Olá, " + nome + "! Seja bem vindo(a) ao iRock!");
-
-// let imagem = document.querySelector("#img");
-// imagem.addEventListener("click", function () {
-//   let nome = prompt("Qual é o seu nome?");
-//   alert("Olá, " + nome + "!");
-// });
 
 function touchImage() {
   let nome = prompt("Qual é o seu nome?");
@@ -30,4 +30,6 @@ function touchImage() {
     alert("Prazer em te conhecer, " + nome + ".");
     document.getElementById("img").src = "coisa.jpg";
   }
+  setTimeout(`document.getElementById("img").src = "rock.jpg";`, 5 * 60 * 1000);
 }
+// let timerId = setInterval(`alert('Wake up!');`, 60000);
